@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #668a6f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.cv-container {
+    display: flex;
+    max-width: 960px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/***********
+INDEX
+************/
+
+.f8-container {
+    max-width: 978px;
+    margin: 30px auto;
+}
+
+.f8-container h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.f8-list {
+    padding-left: 40px;
+}
+
+.f8-item {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    list-style: disc;
+}
+
+.f8-item a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/***********
+CV Flexbox
+************/
+
+/* Sidebar */
+
+.sidebar {
+    flex: 0 0 30%;
+    background-color: var(--primary-color);
+    color: #f5f1f1;
+}
+
+.cv-profile-img {
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.sidebar-text {
+    padding: 15px;
+}
+
+.sidebar-text section {
+    margin-bottom: 20px;
+}
+
+.label,
+.value {
+    display: block;
+}
+
+.label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.info-item {
+    margin-bottom: 18px;
+}
+
+.cv-target h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cv-target p {
+    line-height: 1.5;
+}
+
+/* Main Content */
+
+.main-content {
+    flex: 1;
+    padding: 20px 20px 40px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.main-header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-right: 15px;
+    flex-shrink: 0;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #eee;
+}
+
+.name-title {
+    flex: 1;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 15px;
+    text-align: right;
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--primary-color);
+}
+
+.cv-title {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 15px 0 15px;
+}
+
+.cv-title::after {
+    content: "";
+    border-bottom: 2px solid var(--primary-color);
+    flex: 1;
+    margin-left: 10px;
+}
+
+.job-timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.job-timeline h3 {
+    font-weight: 600;
+}
+
+.job-timeline span {
+    text-transform: uppercase;
+}
+
+.job-date {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.job-title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.job ul {
+    list-style: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+.job p {
+    line-height: 1.6;
+}
