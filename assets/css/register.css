@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #3586bd;
+    --text-color: #f8f7f7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    background-color: #75e1eb;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    max-width: 970px;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    max-height: 80vh;
+    overflow: auto;
+}
+
+.info {
+    flex-basis: 40%;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 35px 20px;
+}
+
+.info h1,
+.register h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.info p {
+    color: #f8f7f7;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.info p strong {
+    font-weight: 600;
+}
+
+.account-btn {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.account-btn:hover {
+    background-color: #f8f7f7;
+}
+
+.register {
+    flex: 1;
+    padding: 35px 20px;
+}
+
+.register h3 {
+    color: var(--primary-color);
+}
+
+.register-form .form-group {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form-group div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group div input {
+    margin-right: auto;
+}
+
+.register-form > .form-group:nth-child(2) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.register-form label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 15px;
+    border: #dfdede 1px solid;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.register-form input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.checkbox-group {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    width: 5%;
+}
+
+.checkbox-group label {
+    flex: 1;
+    user-select: none;
+}
+
+.checkbox-group label a {
+    color: var(--primary-color);
+}
+
+.register-btn {
+    display: block;
+    padding: 18px 40px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+    border: none;
+    transition: background-color 0.5s ease;
+}
+
+.register-btn:hover {
+    background-color: #0056b3;
+}

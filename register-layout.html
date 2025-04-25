@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/register.css" />
+        <title>Register Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Left -->
+            <div class="info">
+                <h1>INFORMATION</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime tempora reprehenderit, quibusdam optio dignissimos
+                    vel iusto. Ducimus rem, laborum quia praesentium animi quam
+                    error soluta dolores voluptate, ea enim dicta aperiam .
+                </p>
+                <p>
+                    <strong>Lorem ipsum:</strong> dolor sit amet consectetur
+                    adipisicing elit. Quas quos alias obcaecati praesentium nisi
+                    veniam cupiditate quidem quam blanditiis doloremque?
+                </p>
+                <button class="account-btn">Have An Account</button>
+            </div>
+
+            <!-- Right -->
+            <div class="register">
+                <h3>REGISTER FORM</h3>
+                <form action="" class="register-form">
+                    <div class="form-group">
+                        <div>
+                            <label for="firstName">First Name</label>
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                autocomplete="off"
+                            />
+                        </div>
+                        <!-- Phân tách Trái & Phải -->
+                        <div>
+                            <label for="lastName">Last Name</label>
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                autocomplete="off"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="off"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <div>
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                            />
+                        </div>
+                        <!-- Phân tách Trái & Phải -->
+                        <div>
+                            <label for="confirmPassword"
+                                >Confirm Password</label
+                            >
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                autocomplete="off"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" />
+                        <label for="terms">
+                            I agree to the
+                            <a href="!#">Terms and Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
